@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>GERAR JSON COM PHP</title>
+</head>
+<body>
+    <form action="process.php" method="post" style="padding: 10px 10px 10px 10px; width: 50%; margin-left: 1%;">
+        <h1>GERAR JSON COM PHP</h1>
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="icon_prefix" name="nome" type="text" class="validate">
+                        <label for="icon_prefix">Nome</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">phone</i>
+                        <input id="icon_telephone" name="telefone" type="tel" class="validate">
+                        <label for="icon_telephone">Telephone</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="password" name="senha" type="password" class="validate">
+                        <label for="password">Senha</label>
+                    </div>
+                </div>
+                <button type="submit" class="waves-effect waves-light btn" style="margin-left: 2%;">Salvar JSON</button>
+            </form>
+        </div>
+    </form>
+</body>
+</html>
